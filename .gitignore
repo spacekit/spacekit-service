@@ -1,0 +1,7 @@
+dev-certs
+node_modules
+npm-debug.log
+spacekit.json
+spacekit.log*
+spacekit-service.json
+spacekit-service.log*

@@ -1,0 +1,48 @@
+{
+  "name": "spacekit-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "semistandard",
+    "start": "node ./bin/index.js | bunyan"
+  },
+  "bin": {
+    "spacekit-service": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/spacekit/spacekit-service.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/spacekit/spacekit-service/issues"
+  },
+  "homepage": "https://github.com/spacekit/spacekit-service#readme",
+  "dependencies": {
+    "async": "1.5.2",
+    "aws-sdk": "2.2.38",
+    "bcrypt": "0.8.5",
+    "body-parser": "1.15.0",
+    "bunyan": "1.8.0",
+    "email-validator": "1.0.4",
+    "express": "4.13.4",
+    "handlebars": "4.0.5",
+    "node-uuid": "1.4.7",
+    "nodemailer": "2.3.0",
+    "nodemailer-markdown": "1.0.0",
+    "pg": "4.5.1",
+    "pg-native": "1.10.0",
+    "ws": "1.0.1",
+    "yargs": "4.2.0"
+  },
+  "devDependencies": {
+    "pre-commit": "1.1.2",
+    "semistandard": "7.0.5"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
