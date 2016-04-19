@@ -1,0 +1,180 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.header .nav-brand {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+/* Custom page footer */
+.footer {
+  margin-top: 20px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Pre-release */
+.pre-release {
+  text-align: center;
+  font-style: italic;
+}
+.pre-release .text-highlight {
+  background-color: #ffffcc;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-image: url(outer-space.jpg);
+  background-position: center center;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+.jumbotron .icons {
+  font-size: 40px;
+}
+
+/* Signup / recover */
+.nav-forms {
+  margin-bottom: 15px;
+}
+
+/* Supporting marketing content */
+.features {
+  margin-top: 20px;
+}
+#signup-form {
+  font-size: 30px;
+}
+#signup-form input {
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+.signup-domain,
+.signup-email {
+  margin-bottom: 20px;
+}
+.signup-domain .relay {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+.signup-domain input {
+  width: 200px;
+}
+.signup-step-2 {
+  display: none;
+}
+.signup-email input {
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Feature matrix*/
+.feature-matrix .text-tiny {
+  font-size: 80%;
+}
+.feature-matrix .text-boost {
+  font-size: 110%;
+}
+.feature-matrix .text-bold {
+  font-weight: bold;
+}
+.feature-matrix .text-green,
+.feature-matrix .fa-check {
+  color: green;
+}
+.feature-matrix .text-red,
+.feature-matrix .fa-times {
+  color: red;
+}
+.feature-matrix .text-orange {
+  color: orange;
+}
+.feature-matrix td,
+.feature-matrix th {
+  text-align: center;
+  font-size: 90%;
+}
+.feature-matrix td:nth-child(1) {
+  text-align: left;
+  font-size: normal;
+  white-space: nowrap;
+}
+/* green spacekit outline */
+.feature-matrix th:nth-child(2) {
+  border-top: 2px solid green !important;
+  border-right: 2px solid green !important;
+  border-left: 2px solid green !important;
+}
+.feature-matrix td:nth-child(2) {
+  border-right: 2px solid green !important;
+  border-left: 2px solid green !important;
+}
+.feature-matrix tr:last-child td:nth-child(2) {
+  border-bottom: 2px solid green !important;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 20px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

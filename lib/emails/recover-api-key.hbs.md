@@ -3,6 +3,9 @@
 We received a request to recover the api key for your account.
 You'll need this reset token to do it.
 
+__Username:__
+{{username}}
+
 __Reset token:__
 {{resetToken}}
 
