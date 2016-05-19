@@ -31,6 +31,7 @@
     "email-validator": "1.0.4",
     "express": "4.13.4",
     "handlebars": "4.0.5",
+    "letsencrypt": "1.4.4",
     "node-uuid": "1.4.7",
     "nodemailer": "2.3.0",
     "nodemailer-markdown": "1.0.0",
