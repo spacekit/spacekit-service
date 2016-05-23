@@ -1,5 +1,10 @@
 # SpaceKit Service
 
+[![Build Status](https://travis-ci.org/spacekit/spacekit-service.svg?branch=master)](https://travis-ci.org/spacekit/spacekit-service)
+[![Dependency Status](https://david-dm.org/spacekit/spacekit-service.svg?style=flat)](https://david-dm.org/spacekit/spacekit-service)
+[![devDependency Status](https://david-dm.org/spacekit/spacekit-service/dev-status.svg?style=flat)](https://david-dm.org/spacekit/spacekit-service#info=devDependencies)
+
+
 ## Install
 
 ```bash

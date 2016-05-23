@@ -4,7 +4,7 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tap tests/*.js",
     "lint": "semistandard",
     "start": "node ./bin/index.js | bunyan"
   },
@@ -22,28 +22,29 @@
   },
   "homepage": "https://github.com/spacekit/spacekit-service#readme",
   "dependencies": {
-    "async": "1.5.2",
-    "aws-sdk": "2.2.38",
-    "bcrypt": "0.8.5",
-    "body-parser": "1.15.0",
-    "bunyan": "1.8.0",
-    "cors": "2.7.1",
-    "email-validator": "1.0.4",
-    "express": "4.13.4",
-    "handlebars": "4.0.5",
-    "letsencrypt": "1.4.4",
-    "node-uuid": "1.4.7",
-    "nodemailer": "2.3.0",
-    "nodemailer-markdown": "1.0.0",
-    "pg": "4.5.1",
-    "pg-native": "1.10.0",
-    "serve-static": "1.10.2",
-    "ws": "1.0.1",
-    "yargs": "4.2.0"
+    "async": "1.x.x",
+    "aws-sdk": "2.x.x",
+    "bcrypt": "0.8.x",
+    "body-parser": "1.x.x",
+    "bunyan": "1.x.x",
+    "cors": "2.x.x",
+    "email-validator": "1.x.x",
+    "express": "4.x.x",
+    "handlebars": "4.x.x",
+    "letsencrypt": "1.x.x",
+    "node-uuid": "1.x.x",
+    "nodemailer": "2.x.x",
+    "nodemailer-markdown": "1.x.x",
+    "pg": "4.x.x",
+    "pg-native": "1.x.x",
+    "serve-static": "1.x.x",
+    "ws": "1.x.x",
+    "yargs": "4.x.x"
   },
   "devDependencies": {
-    "pre-commit": "1.1.2",
-    "semistandard": "7.0.5"
+    "pre-commit": "1.x.x",
+    "semistandard": "8.x.x",
+    "tap": "5.x.x"
   },
   "pre-commit": [
     "lint"
