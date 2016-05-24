@@ -115,6 +115,42 @@ body {
   border-bottom: 2px solid #ccc;
 }
 
+/* Overview */
+.step {
+  font-weight: bold;
+}
+.step label {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.step-1 {
+  color: #000;
+}
+.step-1 label {
+  background: #000;
+}
+.step-2 {
+  color: #4286c5;
+}
+.step-2 label {
+  background: #4286c5;
+}
+.step-3 {
+  color: #4caf50;
+}
+.step-3 label {
+  background: #4caf50;
+}
+
 /* Feature matrix*/
 .feature-matrix .text-tiny {
   font-size: 80%;

@@ -16,8 +16,11 @@
             <li role="presentation" class="active">
               <a href="#">Home</a>
             </li>
-            <li role="overview">
-              <a href="#overview">Overview</a>
+            <li role="install">
+              <a href="#install">Install</a>
+            </li>
+            <li role="examples">
+              <a href="#examples">Examples</a>
             </li>
             <li role="presentation">
               <a href="#features">Features</a>
@@ -37,71 +40,63 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="pre-release">
-            <p><span class="text-highlight">
-              <strong>Please note:</strong> This is a pre-release experiment.
-              We're still beta testing.
+            <p class="lead"><span class="text-highlight">
+              <strong>Attention:</strong> This is a pre-release experiment.
             </span></p>
           </div>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <h1>Secure Connections</h1>
-        <p class="lead">For your home. For your work. For your devices.</p>
-        <p class="icons">
-          <i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <i class="fa fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <i class="fa fa-wifi"></i>
-        </p>
-      </div>
-      <ul class="nav nav-tabs nav-forms">
-        <li role="presentation" class="active">
-          <a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Get an API key</a>
-        </li>
-        <!-- <li role="presentation"> -->
-        <!--   <a href="#recover" aria&#45;controls="recover" role="tab" data&#45;toggle="tab">Recover credentials</a> -->
-        <!-- </li> -->
-      </ul>
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="signup">
-          <form id="signup-form" class="text-center">
-            <div class="signup-step-1">
-              <div class="signup-domain">
-                <span class="relay">home.</span>
-                <input type="text" name="username" placeholder="username">
-                <span>.spacekit.io</span>
-              </div>
-              <div class="signup-email">
-                <input type="text" name="email" placeholder="recovery email address">
-              </div>
-              <button class="btn btn-lg btn-success">Get API key <i class="fa fa-arrow-right"></i></button>
+          <div class="row marketing">
+            <div class="col-lg-4">
+              <h4 class="step step-1">
+                <label>1</label> Start a relay
+              </h4>
+              <p>First you start a relay on your local network.</p>
             </div>
-            <div class="signup-step-2">
-              <div>
-                Username: <span class="signup-username"></span>
-              </div>
-              <div>
-                API key: <span class="signup-api-key"></span>
-              </div>
+            <div class="col-lg-4">
+              <h4 class="step step-2">
+                <label>2</label> We update DNS
+              </h4>
+              <p>We make sure DNS is pointing correctly.</p>
             </div>
-          </form>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="recover">
-          <form id="recover-form">
-          </form>
+            <div class="col-lg-4">
+              <h4 class="step step-3">
+                <label>3</label> Relay is live
+              </h4>
+              <p>Within seconds, you can access your app(s) securely.</p>
+            </div>
+          </div>
+          <a href="routing-diagram.png">
+            <img class="img-responsive" alt="routing diagram" src="routing-diagram.png" />
+          </a>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="page-header">
-            <a id="overview"></a>
+            <a id="install"></a>
             <a href="#" class="pull-right">
               <small>top <i class="fa fa-arrow-up"></i></small>
             </a>
-            <h2>Overview</h2>
+            <h2>Install</h2>
           </div>
-          <a href="routing-diagram.png">
-            <img class="img-responsive" alt="routing diagram" src="routing-diagram.png" />
-          </a>
+          <div>
+            <pre>
+$ npm install -g spacekit</pre>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <a id="examples"></a>
+            <a href="#" class="pull-right">
+              <small>top <i class="fa fa-arrow-up"></i></small>
+            </a>
+            <h2>Examples</h2>
+          </div>
+          <div>
+            <pre>
+$ spacekit laptop 8080</pre>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -164,13 +159,6 @@
                 <td><i class="fa fa-check"></i></td>
               </tr>
               <tr>
-                <td>Dynamic DNS to your IP</td>
-                <td><i class="fa fa-check"></i></td>
-                <td><i class="fa fa-times"></i></td>
-                <td><i class="fa fa-times"></i></td>
-                <td><i class="fa fa-times"></i></td>
-              </tr>
-              <tr>
                 <td>Open source</td>
                 <td><i class="fa fa-check"></i></td>
                 <td class="text-red"><i class="fa fa-thumbs-down"></i> only v1</td>
@@ -199,18 +187,17 @@
             inspect your traffic.</p>
           </div>
           <div class="col-lg-6">
-            <h4>Dynamic DNS to your IP</h4>
-            <p>By using the <code>--noProxy</code> setting, your relay will
-            ping SpaceKit's servers and we'll keep your domain pointed back to
-            your IP address.</p>
-          </div>
-        </div>
-        <div class="row marketing">
-          <div class="col-lg-6">
             <h4>Open source</h4>
             <p><strong>All of our code</strong> is open and everything is
             configurable. You could run your own service and relays. Everything
             is up <a href="https://github.com/spacekit">on our GitHub</a>.</p>
+          </div>
+        </div>
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <h4>Multiple instances</h4>
+            <p>Create as many relays as you'd like;
+            home, work, laptop, etc...</p>
           </div>
           <div class="col-lg-6">
             <h4>Free forever</h4>
@@ -226,9 +213,5 @@
         <p>&copy; 2016 SpaceKit</p>
       </footer>
     </div>
-
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>

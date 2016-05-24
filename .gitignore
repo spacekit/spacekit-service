@@ -1,4 +1,4 @@
-dev-certs
+certs
 node_modules
 npm-debug.log
 spacekit.json
