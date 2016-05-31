@@ -35,11 +35,11 @@
     "node-uuid": "1.x.x",
     "nodemailer": "2.x.x",
     "nodemailer-markdown": "1.x.x",
+    "pem": "1.x.x",
     "pg": "4.x.x",
     "pg-native": "1.x.x",
     "serve-static": "1.x.x",
-    "ws": "1.x.x",
-    "yargs": "4.x.x"
+    "ws": "1.x.x"
   },
   "devDependencies": {
     "pre-commit": "1.x.x",
