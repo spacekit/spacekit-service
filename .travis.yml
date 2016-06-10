@@ -1,13 +1,26 @@
-sudo: false
+sudo: required
 language: node_js
 node_js:
-  - "4"
   - "6"
+env:
+  global:
+    - PGPORT=5433
+    - PGHOST=localhost
+    - DATABASE_URL=postgres://localhost:5433/spacekit_test
+    - CXX=g++-4.8
+services:
+  - postgresql
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
+      - precise-pgdg-9.5
     packages:
       - g++-4.8
-env:
-  - CXX=g++-4.8
+      - postgresql-9.5
+      - postgresql-contrib-9.5
+  postgresql: 9.5
+before_script:
+  - sudo cp /etc/postgresql/9.4/main/pg_hba.conf /etc/postgresql/9.5/main/pg_hba.conf
+  - sudo /etc/init.d/postgresql restart
+  - psql -c 'CREATE DATABASE spacekit_test;' -U postgres
