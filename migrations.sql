@@ -11,3 +11,11 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 ALTER TABLE users ADD COLUMN created TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW();
+
+CREATE TABLE IF NOT EXISTS stats (
+    period date,
+    key text,
+    value bigint default 0
+);
+
+ALTER TABLE stats ADD UNIQUE (period, key);
