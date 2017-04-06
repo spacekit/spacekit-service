@@ -4,9 +4,11 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "tap tests/*.js",
+    "test": "lab -c -t 100 && semistandard",
     "lint": "semistandard",
-    "start": "node ./bin/index.js | bunyan"
+    "start": "node ./bin/index.js | bunyan",
+    "api-server": "nodemon ./bin/api-server.js",
+    "web-server": "nodemon ./bin/web-server.js"
   },
   "bin": {
     "spacekit-service": "./bin/index.js"
@@ -16,35 +18,41 @@
     "url": "git+ssh://git@github.com/spacekit/spacekit-service.git"
   },
   "author": "",
-  "license": "MPL-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/spacekit/spacekit-service/issues"
   },
   "homepage": "https://github.com/spacekit/spacekit-service#readme",
   "dependencies": {
-    "async": "1.x.x",
+    "async": "2.x.x",
     "aws-sdk": "2.x.x",
     "bcrypt": "0.8.x",
-    "body-parser": "1.x.x",
+    "boom": "3.x.x",
     "bunyan": "1.x.x",
-    "cors": "2.x.x",
-    "email-validator": "1.x.x",
-    "express": "4.x.x",
+    "confidence": "3.x.x",
     "handlebars": "4.x.x",
+    "hapi": "14.x.x",
+    "inert": "4.x.x",
+    "joi": "9.x.x",
     "letsencrypt": "1.x.x",
     "node-uuid": "1.x.x",
     "nodemailer": "2.x.x",
     "nodemailer-markdown": "1.x.x",
     "pem": "1.x.x",
-    "pg": "4.x.x",
+    "pg": "6.x.x",
     "pg-native": "1.x.x",
     "serve-static": "1.x.x",
+    "sni": "1.x.x",
     "ws": "1.x.x"
   },
   "devDependencies": {
+    "code": "3.x.x",
+    "lab": "11.x.x",
+    "nodemon": "1.x.x",
+    "portfinder": "1.x.x",
     "pre-commit": "1.x.x",
-    "semistandard": "8.x.x",
-    "tap": "5.x.x"
+    "proxyquire": "1.x.x",
+    "semistandard": "8.x.x"
   },
   "pre-commit": [
     "lint"
